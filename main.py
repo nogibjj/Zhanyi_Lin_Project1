@@ -1,1 +1,5 @@
-# generate random numbers
+
+from fastapi import FastAPI
+
+app = FastAPI()
+

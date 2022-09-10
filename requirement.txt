@@ -1,0 +1,7 @@
+pytest
+pylink
+black
+dask
+matplotlib
+pandas
+dask[distriburted]
