@@ -9,17 +9,20 @@ import pyodbc
 from pyspark import SQLContext
 import requests
 import json
+import keys
 
 
-with sql.connect(server_hostname = os.getenv("adb-3631385232028777.17.azuredatabricks.net"),
-                 http_path       = os.getenv("sql/protocolv1/o/3631385232028777/0914-175706-o6skpubi"),
-                 access_token    = os.getenv("dapi02984bd6ff653556e78202e5eee0cf07-3")) as connection:
+with sql.connect(server_hostname = "adb-3631385232028777.17.azuredatabricks.net",
+                 http_path       = "sql/protocolv1/o/3631385232028777/0914-175706-o6skpubi",
+                 access_token    = "dapi0e0f9e38fb26e69e9e26513cd7663b7f-3") as connection:
 
   with connection.cursor() as cursor:
-    cursor.execute("SELECT * FROM default.winemag_data LIMIT 2")
+    cursor.execute("SELECT * FROM default.winemag_data_2_csv LIMIT 2")
     result = cursor.fetchall()
 
     for row in result:
       print(row)
 
+
+print("connected")
 app = FastAPI()
