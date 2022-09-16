@@ -8,8 +8,8 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    #return {"result": querydb.querydb()}
-    return {"message": "Hello Databricks"}
+    return {"result": querydb.querydb()}
+    #return {"message": "Hello Databricks"}
 
 @app.get("/querydb")
 async def query():
