@@ -1,3 +1,0 @@
-DATABRICKS_HTTP_PATH = "https://adb-1234567890123456.1.azuredatabricks.net"
-DATABRICKS_SERVER_HOSTNAME = "https://adb-1234567890123456.1.azuredatabricks.net"
-DATABRICKS_TOKEN = "dapi0e0f9e38fb26e69e9e26513cd7663b7f-3"
