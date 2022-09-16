@@ -17,7 +17,7 @@ def querydb(query="SELECT * FROM default.diamonds LIMIT 2"):
                  access_token    = "dapi65bdbb392c0bf616660e12c2bd132b29-3") as connection:
 
       with connection.cursor() as cursor:
-        cursor.execute("SELECT * FROM default.winemag_data_2_csv LIMIT 2")
+        cursor.execute(query)
         result = cursor.fetchall()
     
     return result
