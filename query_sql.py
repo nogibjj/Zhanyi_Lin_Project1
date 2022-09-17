@@ -26,7 +26,8 @@ def cli_query(query):
 def cli_create_table(table_name, columns):
     """Create a new empty table"""
 
-    querydb.querydb(f"CREATE TABLE {table_name} ({columns})")
+    #querydb.querydb(f"CREATE TABLE {table_name} ({columns})")
+    querydb.querydb("SELECT * FROM default.diabetes LIMIT 2")
 
 # build click commands for inserting data into a table
 #@cli.command()
