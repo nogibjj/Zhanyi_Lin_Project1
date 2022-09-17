@@ -11,7 +11,7 @@ import requests
 import json
 
 
-def querydb(query="SELECT * FROM default.winemag_data_2_csv LIMIT 2"):
+def querydb(query="SELECT * FROM default.historical_matches_csv"):
     with sql.connect(server_hostname = "adb-3631385232028777.17.azuredatabricks.net",
                  http_path       =  "sql/protocolv1/o/3631385232028777/0914-175706-o6skpubi",
                  access_token    = "dapi65bdbb392c0bf616660e12c2bd132b29-3") as connection:
