@@ -14,7 +14,7 @@ async def root():
     #return {"message": "Hello Databricks"}
 
 @app.get("/querydb")
-async def query():
+def test_query():
     return {"message": "Hello Databricks"}
     #return {"result": querydb.querydb()}
 
