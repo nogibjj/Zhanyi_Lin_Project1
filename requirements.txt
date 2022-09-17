@@ -11,12 +11,7 @@ pandas
 numpy
 pyspark
 matplotlib
-seaborn
 plotly
-PyArrow
 sklearn
-yellowbrick
-nbformat
-wordcloud
 scipy
 streamlit
