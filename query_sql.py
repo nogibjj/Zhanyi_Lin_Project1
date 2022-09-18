@@ -6,29 +6,29 @@ import querydb
 @click.group()
 def cli():
 #    """A simple CLI to query a SQL database"""
-    pass
+    "do something"
 
 
 # build  click commands for query directly
-@cli.command()
-@click.option(
-    "--query",
-    default="SELECT * FROM default.historical_matches_csv WHERE season = 2011 LIMIT 2",
-    help="SQL query to execute",
-)
-def cli_query(query):
-    """Execute a SQL query"""
-    querydb.querydb(query)
+@cli.command("WHO_WOULD_WIN")
+
+@click.option('--team1', default="Portugal", help='Number of greetings.')
+@click.option('--team2', default="China", help='Number of greetings.')
+def cli_query(team1, team2):
+    """Input two teams for historical matches"""
+    click.echo(team1)
+    print(team2)
+    querydb.querydb("select * from matches where team1 = ‘%s’ and team2 = ‘%s’” % (team1, team2)")
 
 # build click commands for creating a new empty table
-@cli.command()
-@click.option("--table_name", default="new_table", help="Table name to create")
-@click.option("--columns", default="col1 INT, col2 STRING", help="Columns to create(enter: colname1 coltype1, colname2 coltype2,...etc)")
-def cli_create_table(table_name, columns):
-    """Create a new empty table"""
+#@cli.command()
+#@click.option("--table_name", default="new_table", help="Table name to create")
+#@click.option("--columns", default="col1 INT, col2 STRING", help="Columns to create(enter: colname1 coltype1, colname2 coltype2,...etc)")
+#def cli_create_table(table_name, columns):
+#    """Create a new empty table"""
 
-    #querydb.querydb(f"CREATE TABLE {table_name} ({columns})")
-    return querydb.querydb("SELECT * FROM default.historical_matches_csv LIMIT 2;")
+#    querydb.querydb(f"CREATE TABLE {table_name} ({columns})")
+    #return querydb.querydb("SELECT * FROM default.historical_matches_csv LIMIT 2;")
 
 # build click commands for inserting data into a table
 #@cli.command()
