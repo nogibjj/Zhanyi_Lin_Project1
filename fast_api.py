@@ -6,14 +6,16 @@ import spark
 
 app = FastAPI()
 
+
 @app.get("/")
 async def root():
     
-    return {"result": querydb.querydb("Japan", "Brazil")}
-    #return {"message": "Give more information to get the result"}
+    #return {"result": querydb.querydb("Japan", "Brazil")}
+    return {"message": "Give more information to get the result"}
 
 @app.get("/querydb")
-def test_query():
+async def test_query():
+    
     return {"message": "Hello Databricks"}
     #return {"result": querydb.querydb()}
 

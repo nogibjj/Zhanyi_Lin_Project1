@@ -6,8 +6,7 @@ import os
 import pymysql
 import pyodbc
 from pyspark import SQLContext
-import requests
-import json
+import helpers
 import pandas as pd
 
 
@@ -33,5 +32,6 @@ def querydb(team1, team2):
     else:
         df = pd.DataFrame(result)
         df.columns = ["date", "tournament", "home_team", "away_team", "home_team_score", "away_team_score"]
-        print(df)
-        return df
+        #print(df)
+        toReturn = helpers.who_win(team1, team2, df)
+        return toReturn
