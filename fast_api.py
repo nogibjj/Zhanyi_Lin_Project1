@@ -10,7 +10,7 @@ app = FastAPI()
 async def root():
     
     return {"result": querydb.querydb("Japan", "Brazil")}
-    #return {"message": "Hello Databricks"}
+    #return {"message": "Give more information to get the result"}
 
 @app.get("/querydb")
 def test_query():
