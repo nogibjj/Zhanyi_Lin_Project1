@@ -22,7 +22,12 @@ def cli_query(team1, team2):
         print("The winner is: Portugal")
     else:
         df = querydb.querydb("select * from default.historical_matches_csv where home_team = '%s' and away_team = '%s'" % (team1, team2))
+        df.append(querydb.querydb("select * from default.historical_matches_csv where home_team = '%s' and away_team = '%s'" % (team2, team1)))
+
+        team1_win = 0
+        team2_win = 0
         
+
         print(df)
 
 
