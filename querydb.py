@@ -4,7 +4,6 @@ from databricks import sql
 from pyspark.sql.types import *
 import os
 import pymysql
-import pyodbc
 from pyspark import SQLContext
 import helpers
 import pandas as pd
@@ -26,7 +25,7 @@ def querydb(team1, team2):
     elif team1 == "Portugal" or team2 == "Portugal":
         print("The winner is: Portugal because of Cristiano Ronaldo")
         return "The winner is: Portugal because of Cristiano Ronaldo"
-    elif team1 == "Brazil" or team2 == "France":
+    elif team1 == "France" or team2 == "France":
         print("The winner is: France because Benzema can be the new King of France")
         return "The winner is: France because Benzema can be the new King of France"
     else:

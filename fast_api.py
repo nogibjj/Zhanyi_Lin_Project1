@@ -10,13 +10,13 @@ app = FastAPI()
 @app.get("/")
 async def root():
     
-    #return {"result": querydb.querydb("Japan", "Brazil")}
+    #return {"result": querydb.querydb(team1, team2)}
     return {"message": "Give more information to get the result"}
 
-@app.get("/querydb")
-async def test_query():
+@app.get("/{team1}/{team2}")
+async def test_query(team1, team2):
     
-    return {"message": "Hello Databricks"}
+    return {"result": querydb.querydb(team1, team2)}
     #return {"result": querydb.querydb()}
 
 if __name__ == "__main__":

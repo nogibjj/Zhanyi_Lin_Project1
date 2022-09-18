@@ -22,6 +22,9 @@ def cli_query(team1, team2):
     df = pd.DataFrame(querydb.querydb(team1, team2))
     helpers.who_win(team1, team2, df)
 
+
+
+
 # run the CLI
 if __name__ == "__main__":
     cli()
