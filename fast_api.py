@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 import uvicorn
-import streamlit
 import querydb
 import query_sql
 import spark
