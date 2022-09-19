@@ -3,7 +3,6 @@ import databricks
 from databricks import sql
 from pyspark.sql.types import *
 import os
-import pymysql
 from pyspark import SQLContext
 import helpers
 import pandas as pd
