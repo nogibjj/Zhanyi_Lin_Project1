@@ -3,6 +3,7 @@
 ## Introduction
 As the World Cup approaches you, more and more people are paying attention to this sporting event. Among them are expectations for the performance of the players you love, blessings for the home team you love to get good results, or football betting games. All of these can arouse people's enthusiasm. Therefore, I designed this project using naive Bayesian data from the past 30 years of competition. Enter two teams to get the winning team predicted by Bayes.
 ![image](https://user-images.githubusercontent.com/55003943/190939285-0976a535-bc2f-4d7f-a60b-697f2511cc48.png)
+picture reference: https://www.fifa.com/fifaplus/en/articles/qatar-2022-all-qualified-teams-groups-dates-match-schedule-tickets-more
 
 
 ## Structure
@@ -13,7 +14,7 @@ Languages: Python, SQL
 Packages: Spark, pyspark, databricks, pandas, numpy, os, fastapi, click
 
 ![image](https://user-images.githubusercontent.com/55003943/190938853-7ca23207-ee03-4e37-9037-a595e345a596.png)
-picture reference: https://www.fifa.com/fifaplus/en/articles/qatar-2022-all-qualified-teams-groups-dates-match-schedule-tickets-more
+
 
 
 ## How to use
