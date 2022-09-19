@@ -35,6 +35,9 @@ or
 
 press run button in VS code
 
+![image](https://user-images.githubusercontent.com/55003943/190939516-1a8d55b7-c896-4d93-8fff-c9a2b5b0edd4.png)
+
+
 2nd step:
 click
 ![image](https://user-images.githubusercontent.com/55003943/190937728-8844aebc-f27f-4038-9b8c-8a8b87f76ece.png)
