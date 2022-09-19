@@ -13,6 +13,7 @@ Languages: Python, SQL
 Packages: Spark, pyspark, databricks, pandas, numpy, os, fastapi, click
 
 ![image](https://user-images.githubusercontent.com/55003943/190938853-7ca23207-ee03-4e37-9037-a595e345a596.png)
+picture reference: https://www.fifa.com/fifaplus/en/articles/qatar-2022-all-qualified-teams-groups-dates-match-schedule-tickets-more
 
 
 ## How to use
@@ -36,7 +37,6 @@ or
 press run button in VS code
 
 ![image](https://user-images.githubusercontent.com/55003943/190939516-1a8d55b7-c896-4d93-8fff-c9a2b5b0edd4.png)
-picture reference: https://www.fifa.com/fifaplus/en/articles/qatar-2022-all-qualified-teams-groups-dates-match-schedule-tickets-more
 
 
 2nd step:
