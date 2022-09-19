@@ -48,5 +48,8 @@ read the result
 ![image](https://user-images.githubusercontent.com/55003943/190937914-e6211a09-74ce-4daa-b189-b52d904fe13d.png)
 
 
+### Future Improvement
+1. Apply resampling and more machine learning models to predict the winner.
+2. Put some weights on the current players' ability.
 
 
