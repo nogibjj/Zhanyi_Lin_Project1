@@ -17,16 +17,17 @@ Packages: Spark, pyspark, databricks, pandas, numpy, os, fastapi, click
 
 ### to run cli
 
-,,,
+
+```
 python query_sql.py WHO_WOULD_WIN --team1=<first_team_you_want_to_explore> --team2=<second_team_you_want_to_explore>
-,,,
+```
 
 ### to use fast_api
 1st step: 
 
-'''
+```
 python fast_api.py 
-'''
+```
 
 or 
 
