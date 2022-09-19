@@ -10,6 +10,9 @@ Machine: Github codespace
 Languages: Python, SQL
 Packages: Spark, pyspark, databricks, pandas, numpy, os, fastapi, click
 
+![image](https://user-images.githubusercontent.com/55003943/190938853-7ca23207-ee03-4e37-9037-a595e345a596.png)
+
+
 ## How to use
 
 ### to run cli
