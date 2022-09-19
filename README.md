@@ -13,4 +13,28 @@ Packages: Spark, pyspark, databricks, pandas, numpy, os, fastapi, click
 ## How to use
 
 ### to run cli
+python query_sql.py WHO_WOULD_WIN --team1=<first_team_you_want_to_explore> --team2=<second_team_you_want_to_explore>
+
+### to use fast_api
+1st step: 
+python fast_api.py 
+
+or 
+
+press run button in VS code
+
+2nd step:
+click
+![image](https://user-images.githubusercontent.com/55003943/190937728-8844aebc-f27f-4038-9b8c-8a8b87f76ece.png)
+
+3rd step:
+enter two team names in browser in this form
+![image](https://user-images.githubusercontent.com/55003943/190937847-e7d016a9-bb76-4020-878e-1d4206d7d7c9.png)
+
+4th step:
+read the result
+![image](https://user-images.githubusercontent.com/55003943/190937914-e6211a09-74ce-4daa-b189-b52d904fe13d.png)
+
+
+
 
