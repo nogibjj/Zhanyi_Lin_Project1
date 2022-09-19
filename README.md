@@ -54,5 +54,6 @@ read the result
 ### Future Improvement
 1. Apply resampling and more machine learning models to predict the winner.
 2. Put some weights on the current players' ability.
+3. Take other public predictions as reference.
 
 
