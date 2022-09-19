@@ -19,8 +19,7 @@ def cli():
 @click.option('--team2', default="Brazil", help='Number of greetings.')
 def cli_query(team1, team2):
     """Input two teams for historical matches"""
-    df = pd.DataFrame(querydb.querydb(team1, team2))
-    helpers.who_win(team1, team2, df)
+    querydb.querydb(team1, team2)
 
 
 
