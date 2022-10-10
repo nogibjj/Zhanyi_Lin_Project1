@@ -6,6 +6,8 @@ import querydb
 import pandas as pd
 import spark
 import helpers
+import draw
+import streamlit as st
 # build  click commands for query directly
 # build a click group
 @click.group()
@@ -26,7 +28,7 @@ def cli_query(team1, team2):
 @cli.command("histGame")
 @click.option('--team1', default="Portugal", help='Number of greetings.')
 def hisGame(team1):
-    """Find the historical matches of a team"""
+    """input a team to get its historical matches"""
     print(querydb.hisGame(team1))
 
 @cli.command("players")
@@ -38,16 +40,23 @@ def players(team1):
 @cli.command("whichGroup")
 @click.option('--team1', default="Portugal", help='Number of greetings.')
 def whichGroup(team1):
-    """Find the teams in the same group"""
+    """input a team to find which group it is"""
     print(querydb.findGroup(team1))
 
 @cli.command("recent")
 @click.option('--team1', default="Portugal", help='See the recent news of a team')
 def recent(team1):
-    """See the recent news of a team"""
+    """input a team to see the recent news"""
     links = querydb.recentNews(team1)
     for l in links:
-        print(l)
+        st.write("check out this [link]({a})".format(a=l))
+        
+@cli.command("drawpic")
+@click.option('--theme', default="pandas play soccer", help='Who you want to draw')
+def drawpic(theme):
+    """input a theme to draw a picture"""
+    print("drawing the picture of " + theme)
+    draw.draw_pic(theme)
 
 # run the CLI
 if __name__ == "__main__":

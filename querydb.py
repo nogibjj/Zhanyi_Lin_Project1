@@ -91,6 +91,6 @@ def findGroup(team1):
 def recentNews(team1):
     query = team1 + " world cup"
     toReturn = []
-    for j in search(query, tld="co.in", num=10, stop=5, pause=2):
+    for j in search(query, tld="co.in", num=10, stop=10, pause=2):
         toReturn.append(j)
     return toReturn
