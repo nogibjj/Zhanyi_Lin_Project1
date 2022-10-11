@@ -1,3 +1,4 @@
+
 from fastapi import FastAPI
 import databricks
 from databricks import sql
@@ -71,7 +72,7 @@ def findPlayers(team1):
 
 def findGroup(team1):
     
-    query="select . from default.Qatar2022-teams"
+    query="select * from default.Qatar2022-teams"
     with sql.connect(server_hostname = os.getenv("DATABRICKS_SERVER_HOSTNAME"),
                  http_path       =  os.getenv("DATABRICKS_HTTP_PATH"),
                  access_token    = os.getenv("DATABRICKS_TOKEN")) as connection:

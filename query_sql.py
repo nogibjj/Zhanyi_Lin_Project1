@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/usr/bin/env python
 from cmd import PROMPT
 import click
 from requests import head
