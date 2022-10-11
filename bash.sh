@@ -4,6 +4,7 @@
 echo "Hello! Welcome to the stock analysis tool!"
 chmod +x query_sql.py
 chmod +x querydb.py
+chmod +x draw.py
 
 echo "Please enter the theme to draw:"
 read theme

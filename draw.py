@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Reference: https://github.com/FireHead90544/craiyon.py
 from craiyon import Craiyon
 from craiyon import Craiyon
